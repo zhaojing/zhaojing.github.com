@@ -4,13 +4,204 @@
  <title>Betta</title>
  <link href="" rel="self"/>
  <link href=""/>
- <updated>2016-05-18T17:10:42+08:00</updated>
+ <updated>2016-05-18T18:59:09+08:00</updated>
  <id></id>
  <author>
    <name>Betta</name>
    <email>zhaojing19890531@163.com</email>
  </author>
 
+ 
+ <entry>
+   <title>使用 Jacman 主题  常见错误</title>
+   <link href="/jekyll/2016/05/18/how-to-resolve-jacman"/>
+   <updated>2016-05-18T00:00:00+08:00</updated>
+   <id>/jekyll/2016/05/18/how-to-resolve-jacman</id>
+   <content type="html">&lt;p&gt;&lt;strong&gt;在使用 Jacman 主题 ,错误1：当运行jekyll –server 提示&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016.5.18/jekyll_server.jpg&quot; alt=&quot;My jekyll_server screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;解决方案：&lt;/p&gt;
+
+&lt;p&gt;(1) 你需要将Gemfile source ‘https://rubygems.org’-&amp;gt;source ‘http://rubygems.org’ &lt;a href=&quot;http://stackoverflow.com/questions/27484567/make-sure-that-gem-install-succeeds-before-bundling&quot;&gt;链接&lt;/a&gt; 这样在你运行下面命令，就不会一直报 “Make sure that ‘gem install ~ ‘ succeeds before bundling”&lt;/p&gt;
+
+&lt;p&gt;(2) sudo gem install bundler -v&lt;/p&gt;
+
+&lt;p&gt;(3) bundle install -V&lt;/p&gt;
+
+&lt;p&gt;(4) bundle exec jekyll serve&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>css 在线整理工具</title>
+   <link href="/css/2016/03/10/css"/>
+   <updated>2016-03-10T00:00:00+08:00</updated>
+   <id>/css/2016/03/10/css</id>
+   <content type="html">&lt;p&gt;http://tool.lanrentuku.com/cssformat/&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Yosemite u盘安装系统</title>
+   <link href="/u%E7%9B%98%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/2016/03/07/Yosemite"/>
+   <updated>2016-03-07T00:00:00+08:00</updated>
+   <id>/u%E7%9B%98%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/2016/03/07/Yosemite</id>
+   <content type="html">&lt;p&gt;http://www.macx.cn/thread-2143641-1-1.html&lt;/p&gt;
+
+&lt;p&gt;http://www.feng.com/apple/tutorial/2012-08-14/Teach_you_how_to_make_OS_X_Lion_start_U_disk_452965.shtml&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>常用命令解释</title>
+   <link href="/%E5%91%BD%E4%BB%A4/2015/12/15/command"/>
+   <updated>2015-12-15T00:00:00+08:00</updated>
+   <id>/%E5%91%BD%E4%BB%A4/2015/12/15/command</id>
+   <content type="html">&lt;p&gt;RVM :帮你管理多个ruby 环境，还包括依赖的ruby 插件都由RVM 管理&lt;/p&gt;
+
+&lt;p&gt;rubyGems:将ruby 程序包管理器&lt;/p&gt;
+
+&lt;p&gt;gem ：应用程序代码库&lt;/p&gt;
+
+&lt;p&gt;gemfile：依赖哪些第三方包，根据该配置寻找这些包&lt;/p&gt;
+
+&lt;p&gt;rake：类似于 make&lt;/p&gt;
+
+&lt;p&gt;rakefile：是由ruby编写，rake 执行rakefile 文件&lt;/p&gt;
+
+&lt;p&gt;bundle ：相当于多个ruby顺序执行&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>及时通讯开源框架比较</title>
+   <link href="/socket/2015/11/26/socket"/>
+   <updated>2015-11-26T00:00:00+08:00</updated>
+   <id>/socket/2015/11/26/socket</id>
+   <content type="html">&lt;p&gt;http://www.easemob.com/Product/price  环信及时通讯语音 2个以上收费（注册用户300万以下或日活30万以下终身免费）&lt;/p&gt;
+
+&lt;p&gt;https://www.gotye.com.cn/docs/ime/ios.html#im_58亲加通讯云 不支持视频&lt;/p&gt;
+
+&lt;p&gt;http://www.rongcloud.cn/pricing/index  融云及时通讯 不支持视频不支持视频&lt;/p&gt;
+
+&lt;p&gt;http://justalkcloud.com/cn/price/  justTalk付费&lt;/p&gt;
+
+&lt;p&gt;容联 打电话 做的很多显得不专业了解我们之前，平台为每个注册的开发者提供 ￥8 元免费测试&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>抓取整个网站资源</title>
+   <link href="/html/css/2015/06/15/html_blog"/>
+   <updated>2015-06-15T00:00:00+08:00</updated>
+   <id>/html/css/2015/06/15/html_blog</id>
+   <content type="html">&lt;p&gt;有童鞋对很多网站喜爱，却不知如何抓取整个网站&lt;/p&gt;
+
+&lt;p&gt;wget -r -p -np -k 网站名&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>android html5 调试</title>
+   <link href="/android/2015/05/16/android_html"/>
+   <updated>2015-05-16T00:00:00+08:00</updated>
+   <id>/android/2015/05/16/android_html</id>
+   <content type="html">&lt;p&gt;chrome://inspect/#devices&lt;/p&gt;
+
+&lt;p&gt;http://www.uis.cc/content-6-45-1.html&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ios 更改项目名</title>
+   <link href="/ios/2014/12/26/IOS_project_name"/>
+   <updated>2014-12-26T00:00:00+08:00</updated>
+   <id>/ios/2014/12/26/IOS_project_name</id>
+   <content type="html">&lt;p&gt;经常有童鞋在项目里项目名字没有起好，然后直接更改项目名，引发一系列错误。&lt;/p&gt;
+
+&lt;p&gt;在 ios 如果有需要改项目名，project.pbxproj是你最好的选择，你只要将这个文件里搜索以前的项目名，替换新的项目名就可以了&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ios 用UIBezierPath使画线圆滑</title>
+   <link href="/ios/2014/11/22/IOS_draw"/>
+   <updated>2014-11-22T00:00:00+08:00</updated>
+   <id>/ios/2014/11/22/IOS_draw</id>
+   <content type="html">&lt;p&gt;有童鞋对很多网站喜爱，却不知如何抓取整个网站&lt;/p&gt;
+
+&lt;p&gt;wget -r -p -np -k 网站名&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ios 找不到库文件&amp;&amp;库文件</title>
+   <link href="/ios/2013/05/29/iOS_file"/>
+   <updated>2013-05-29T00:00:00+08:00</updated>
+   <id>/ios/2013/05/29/iOS_file</id>
+   <content type="html">&lt;p&gt;首先库文件通常都是由外部引用，而不是库本身，因为这样容易造成冲突 ，如果一个问件引用了库，先看&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2013.5.29/lib.jpg&quot; alt=&quot;My screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;再确认&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2013.5.29/QQ20130329-2.png&quot; alt=&quot;My screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在HeaderSearchPath 是否找到了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2013.5.29/QQ20130329-3.png&quot; alt=&quot;My screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2013.5.29/QQ20130329-4.png&quot; alt=&quot;My screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最后看外面加了没有
+&lt;img src=&quot;/assets/2013.5.29/QQ20130329-5.png&quot; alt=&quot;My screenshot&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>mac 工具</title>
+   <link href="/mac/2013/04/15/mac"/>
+   <updated>2013-04-15T00:00:00+08:00</updated>
+   <id>/mac/2013/04/15/mac</id>
+   <content type="html">&lt;p&gt;代码编辑器 http://www.sublimetext.com&lt;/p&gt;
+
+&lt;p&gt;mouApp  http://mouapp.com&lt;/p&gt;
+
+&lt;p&gt;ruby         http://guides.ruby-china.org/&lt;/p&gt;
+
+&lt;p&gt;image处理http://tangchuanya o.com/20120704891/&lt;/p&gt;
+
+&lt;p&gt;流程图http://www.omnigroup.com/products/omnigraffle/overview/&lt;/p&gt;
+
+&lt;p&gt;ios笔记http://yul100887.blog.163.com/blog/static/200336135201264351237/&lt;/p&gt;
+
+&lt;p&gt;iOS 代码编写工具 http://blog.devtang.com/blog/2012/02/01/use-appledoc-to-generate-xcode-doc/&lt;/p&gt;
+
+&lt;p&gt;git 起步http://www.open-open.com/lib/view/open1328069609436.html&lt;/p&gt;
+
+&lt;p&gt;打包用的https://github.com/benvium/libimobiledevice-mac&lt;/p&gt;
+
+&lt;p&gt;文档生成http://gentlebytes.com&lt;/p&gt;
+
+&lt;p&gt;滚动 截屏工具 snip&lt;/p&gt;
+
+&lt;p&gt;脚本查看http://www.sublimetext.com/2&lt;/p&gt;
+
+&lt;p&gt;尺子http://soft.macx.cn/2015.html&lt;/p&gt;
+
+&lt;p&gt;VPNhttp://www.cocojsq8.info/client/cart.php&lt;/p&gt;
+
+&lt;p&gt;脚本：http://www.sublimetext.com/2&lt;/p&gt;
+
+&lt;p&gt;ffmpeg 图像转换工具 brew install ffmpeg&lt;/p&gt;
+
+&lt;p&gt;数据库 ：https://leancloud.cn&lt;/p&gt;
+
+&lt;p&gt;画图软件：OmniGraffle&lt;/p&gt;
+</content>
+ </entry>
  
  
 </feed>

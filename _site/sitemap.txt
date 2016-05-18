@@ -9,3 +9,15 @@
 /archives/
 /rss.xml
 /sitemap.txt
+
+/jekyll/2016/05/18/how-to-resolve-jacman
+/css/2016/03/10/css
+/u%E7%9B%98%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/2016/03/07/Yosemite
+/%E5%91%BD%E4%BB%A4/2015/12/15/command
+/socket/2015/11/26/socket
+/html/css/2015/06/15/html_blog
+/android/2015/05/16/android_html
+/ios/2014/12/26/IOS_project_name
+/ios/2014/11/22/IOS_draw
+/ios/2013/05/29/iOS_file
+/mac/2013/04/15/mac
