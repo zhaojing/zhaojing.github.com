@@ -1,0 +1,11 @@
+
+/404
+/atom.xml
+/about/
+/search/
+/tags/
+/categories/
+/
+/archives/
+/rss.xml
+/sitemap.txt
