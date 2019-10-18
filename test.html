@@ -18,12 +18,18 @@
 </head>
 <body>
 <button  class="button" onclick="recordVideo()">Click Me record Video</button>
+<button  class="button" onclick="scanQRCode()">Click Me scan</button>
 <script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js">
 </script>
 <script>
     function recordVideo() {
         bridge.call("recordVideo", function(result) {
             alert(result);
+        });
+    }
+    function scanQRCode() {
+        bridge.call("scanQRCode", function(result) {
+            document.getElementById("qr").innerHTML = result;
         });
     }
 </script>
