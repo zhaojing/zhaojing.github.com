@@ -6,6 +6,8 @@
 <script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js" />
 <script>
     function recordVideo() {
+        bridge.call("closeWebView");
+        alert("123")
         bridge.call("recordVideo", function(result) {
             alert(result);
         });
