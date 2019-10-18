@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="recordVideo()">Click Me!</button>
+<script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js" />
+<script>
+    function recordVideo() {
+        bridge.call("recordVideo", function(result) {
+            alert(result);
+        });
+    }
+</script>
+
+</body>
+</html>
