@@ -39,6 +39,7 @@
             // reader.result为图片地址
             document.getElementById("image_v").src = reader.result;
         }
+        alert("test" + e.target.files[0]);
         reader.readAsDataURL(e.target.files[0]);
     }
 </script>
