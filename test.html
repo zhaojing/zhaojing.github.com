@@ -37,7 +37,7 @@
         var reader = new FileReader();
         reader.onload = function(e) {
             // reader.result为图片地址
-            document.getElementById("image_v").src = reader.result;
+            document.getElementById("image").src = reader.result;
         }
         alert("test" + e.target.files[0]);
         reader.readAsDataURL(e.target.files[0]);
