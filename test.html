@@ -17,18 +17,31 @@
     </style>
 </head>
 <body>
-<button  class="button" onclick="recordVideo()">Click Me record Video1</button>
-<button  class="button" onclick="scanQRCode()">Click Me scan</button>
+<button class="button" onclick="recordVideo()">Click Me record Video2</button>
+<button class="button" onclick="scanQRCode()">Click Me scan</button>
 <script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js">
 </script>
 <script>
     function recordVideo() {
-        bridge.call("recordVideo", function(result) {
-            alert(result);
+        bridge.call("recordVideo", function (result) {
+            plus.io.resolveLocalFileSystemURL(result, function (entry) {
+                entry.file(function (file) {
+                    var reader = new FileReader();
+                    reader.onloadend = function (e) {
+                        // reader.result为图片地址
+                        console.log(this.result);
+                    }
+                    reader.readAsDataURL(file);
+                });
+            }, function fail(e) {
+                console.log("FileSystem Error");
+                console.dir(e);
+            });
         });
     }
+
     function scanQRCode() {
-        bridge.call("scanQRCode", function(result) {
+        bridge.call("scanQRCode", function (result) {
             document.getElementById("qr").innerHTML = result;
         });
     }
