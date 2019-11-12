@@ -17,28 +17,19 @@
     </style>
 </head>
 <body>
-<button class="button" onclick="recordVideo()">Click Me record Video3</button>
+<button class="button" onclick="recordVideo()">Click Me record Video10</button>
 <button class="button" onclick="scanQRCode()">Click Me scan</button>
+<video id = "video" width="320" height="240" controls/>
 <script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js">
 </script>
 <script>
     function recordVideo() {
         bridge.call("recordVideo", function (result) {
             alert(result);
-            plus.io.resolveLocalFileSystemURL(result, function (entry) {
-                entry.file(function (file) {
-                    var reader = new FileReader();
-                    reader.onloadend = function (e) {
-                        // reader.result为图片地址
-                        alert(this.result);
-                    }
-                    reader.readAsDataURL(file);
-                });
-            }, function fail(e) {
-                alert("FileSystem Error");
-                console.dir(e);
-            });
-            alert(work);
+            var player = document.getElementById("video");
+            player.src = "data:video/webm;base64,"+ result;
+            player.load();
+            player.play();
         });
     }
 
