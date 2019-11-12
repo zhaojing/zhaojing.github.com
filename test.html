@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-<button class="button" onclick="recordVideo()">Click Me record Video0</button>
+<button class="button" onclick="recordVideo()">Click Me record Video2</button>
 <video id = "video" width="320" height="240" controls/>
 <video id = "video2" width="500" height="240" controls/>
 <script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js">
@@ -30,10 +30,6 @@
             player.src = "data:video/mp4;base64,"+result;
             player.load();
             player.play();
-            var player2 = document.getElementById("video2");
-            player2.src = "data:video/mp4;base64,"+btoa(result);
-            player2.load();
-            player2.play();
         });
     }
 
