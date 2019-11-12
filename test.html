@@ -20,6 +20,7 @@
 <button class="button" onclick="recordVideo()">Click Me record Video11</button>
 <button class="button" onclick="scanQRCode()">Click Me scan</button>
 <video id = "video" width="320" height="240" controls/>
+<video id = "video2" width="320" height="240" controls/>
 <script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js">
 </script>
 <script>
@@ -27,9 +28,13 @@
         bridge.call("recordVideo", function (result) {
             alert(result);
             var player = document.getElementById("video");
-            player.src = "data:video/webm;base64,"+ result;
+            player.src = "data:video/mp4;base64,"+result;
             player.load();
             player.play();
+            var player2 = document.getElementById("video2");
+            player2.src = "data:video/mp4;base64,"+btoa(result);
+            player2.load();
+            player2.play();
         });
     }
 
