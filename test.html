@@ -17,13 +17,13 @@
     </style>
 </head>
 <body>
-<button class="button" onclick="recordVideo()">Click Me record Video</button>
+<button class="button" onclick="recordVideo()">Click Me record Video0</button>
 <video id = "video" width="320" height="240" controls/>
-<video id = "video2" width="320" height="240" controls/>
+<video id = "video2" width="500" height="240" controls/>
 <script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js">
 </script>
 <script>
-    function recordVideo() {
+    function recordVideo() {o
         bridge.call("recordVideo", function (result) {
             alert(result);
             var player = document.getElementById("video");
