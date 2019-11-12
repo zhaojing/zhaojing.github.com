@@ -17,23 +17,18 @@
     </style>
 </head>
 <body>
-<button class="button" onclick="recordVideo()">Click Me record Video3</button>
-<video id = "video" width="320" height="240" controls/>
-<script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js" />
+<button  class="button" onclick="recordVideo()">Click Me record Video</button>
+<video width="100" height="100" controls></video>
+<script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js">
+</script>
 <script>
     function recordVideo() {
-        bridge.call("recordVideo", function (result) {
+        bridge.call("recordVideo", function(result) {
             alert(result);
             var player = document.getElementById("video");
             player.src = "data:video/mp4;base64,"+result;
             player.load();
             player.play();
-        });
-    }
-
-    function scanQRCode() {
-        bridge.call("scanQRCode", function (result) {
-            document.getElementById("qr").innerHTML = result;
         });
     }
 </script>
