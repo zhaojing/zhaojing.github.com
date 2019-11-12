@@ -18,29 +18,23 @@
 </head>
 <body>
 <button  class="button" onclick="recordVideo()">Click Me record Video</button>
-<input id="imageSelector" type="file" name="image" accept="image/*" />
-<button  class="button" onclick="imageSelect()">Click Me record Video</button>
-<img  id="image" alt="Girl in a jacket" width="500" height="600">
-<script src="https://unpkg.com/dsbridge@3.0.7/dist/dsbridge.js">
-</script>
 <script>
-    window.onload = function() {
-        var imageSelector = document.getElementById("imageSelector");
-        imageSelector.addEventListener("change", handlerImageFile);
-    }
     function recordVideo() {
         bridge.call("recordVideo", function(result) {
-            alert(result);
-        });
-    }
-    function handlerImageFile() {
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            // reader.result为图片地址
-            document.getElementById("image").src = reader.result;
-        }
-        alert("test" + e.target.files[0]);
-        reader.readAsDataURL(e.target.files[0]);
+            plus.io.resolveLocalFileSystemURL(result, function (entry) {
+                entry.file(function(file) {
+                    var reader = new FileReader();
+                    reader.onloadend = function (e) {
+                        // reader.result为图片地址
+                        console.log(this.result);
+                    }
+                    reader.readAsDataURL(file);
+                });
+            },function fail(e) {
+                console.log("FileSystem Error");
+                console.dir(e);
+            });
+    });
     }
 </script>
 
